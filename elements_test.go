@@ -27,7 +27,7 @@ func decay(sequence string) string {
 
 func TestNumbers(t *testing.T) {
 	for n, elem := range Elements {
-		if byte(n) != elem.Number {
+		if n != elem.Number {
 			t.Fatalf(
 				"Element number %d/%s does not match its index position (%d)",
 				elem.Number, elem.Name, n)
@@ -36,7 +36,7 @@ func TestNumbers(t *testing.T) {
 }
 
 func TestDecay(t *testing.T) {
-	var N = byte(len(Elements))
+	var N = len(Elements)
 
 	for _, elem := range Elements {
 		product := decay(elem.Sequence)
