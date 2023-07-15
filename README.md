@@ -1,4 +1,5 @@
 ## Look-and-say sequence Elements
+[![Go Reference](https://pkg.go.dev/badge/github.com/0xfadeef/look_and_say_elements.svg)](https://pkg.go.dev/github.com/0xfadeef/look_and_say_elements)
 
  Look-and-say sequence starts with arbitrary string of digits; to generate the next member, iterate over the digits
  and write the count of consecutive repetitions of a digit followed by the digit itself. For example, the member
