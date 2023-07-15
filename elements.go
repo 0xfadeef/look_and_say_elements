@@ -8,7 +8,7 @@ type Element struct {
 	Products []int
 }
 
-var Elements = []Element {
+var Elements = [...]Element {
 	{},
 	{
 		Number:   1,
